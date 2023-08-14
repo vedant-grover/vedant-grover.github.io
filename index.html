@@ -1,123 +1,1024 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-US">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('article');
+      document.createElement('aside');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+	<script type="text/javascript">
+
+
+	// Search
+	function makeSearch() {
+		var q = document.getElementById('q');
+		var category = 'all';
+		var url = 'https://olemiss.edu/search?r=' + q.value;
+		window.location.href = url;
+		return false;
+	}
+
+	</script>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f5f5f5;
+
+	<!--BE Head: Start-->
+	
+<!-- be_ixf, sdk, gho-->
+<meta name="be:sdk" content="php_sdk_1.5.3" />
+<meta name="be:timer" content="186ms" />
+<meta name="be:orig_url" content="https%3A%2F%2Fgreeks.olemiss.edu%2F" />
+<meta name="be:norm_url" content="https%3A%2F%2Fgreeks.olemiss.edu%2F" />
+<meta name="be:capsule_url" content="https%3A%2F%2Fixfd-api.bc0a.com%2Fapi%2Fixf%2F1.0.0%2Fget_capsule%2Ff00000000246364%2F01263748817" />
+<meta name="be:api_dt" content="py_2023;pm_08;pd_09;ph_02;pmh_53;p_epoch:1691549599281" />
+<meta name="be:mod_dt" content="py_2023;pm_08;pd_09;ph_02;pmh_53;p_epoch:1691549599281" />
+<meta name="be:diag" content="QfmgxBJesxH1yPX5M/OLkV8sbYRgGvaug1ROkuGTfNjrH3xEKvmHuFWmFXUcnkJkuXYrEt+6hK5tvhF2v0F+6xOfl8J13eRMXf5kff6ZY3RgE7yx5q8NpPpk98Z4iL71BtPzbckziSG8xMoz70kMhqo5ww+L7ydzDl/LrKawINvLCEftthw0ApshP7zYOsa+MZaGbzH8oQMTx7AGLS3sP9ZPlUBYnfeqVyHoYXGDvyi4JB2W+Iy84Z4DFx5upznuHlhXmed1IijFqqLmLNvaPLjCLA3NLR6HWKjW4YG98KDxIOYnqIroAKEry1IdZBeP5D2jjX1JV2ooIon9LomN8/fTUUpsAptjn0s63TYg6+irzRsfCUZAIQSu2ZgJW6drbG2XxWHppx+NQrwo8mrW1guHwXh6F4LCwZO0xV9OLwLeCE0Ky23R1d5bXYQT6ja/qSCGDNNn5dRJumiJGR+uiP9/muay5jYuDjxp980jxxaX2511hDXXh79pU0/+oLaM/0wybdL3YRhogJAB6UEsJ9JYeZhsU1TbwwbFEUEb0+UIFElOttH6mu9aMSeLWqaicHw8FZ8/KPpP4x29oJBQp2rMcewAvlKOnG4qHBOdeMLCDajplKWIX4c9knzRMq7Bwx4DLidX652NNW7nbIOJpkmXozsWU9GSGhJWxDevRU37G11l4hl7LklcmZGW8/fauk06xPYKUKBH4F9CkZY2rv8c7houVRynvViUttNzwdYySWbkw5xusLKIul2gxjr7a50PbShMfHrG1znRUYyJdDPx9RS4yaAryAqvOFQmDGNBNPzQNQJ21ROU9yVEv/ZfqWHVs7yx3q/fu/oWrkUrjSieca8hHNONj/eyEPLmlua/4Aj0dFO1KdIl0ON+knQ3opmzsgnZ/ET94Vt4bJZB7WpjBvipk15/mleLd4oIFWGYQDRnKryeO1sJEbEz8Xk6rdj604UR8sFkzczMhws5WmHvLemyx4Nd3w6zPGiczoEQ7xpa+OPhld1qkeA+nalX7ZFiA044HmsySnVx/kNGvPDXCxsC2XnnSD69XBR1wGqO7UrXD8ikNy6MM20VhYyWI68TvqHQtiTZyf0kjRAT1Is+NSLUTn0Ysk7RnVRgANVxZKvuf9zY+VU4LDv7/GbVVz9OkXp3ugdL6RZQCBZ0LHqrsNS+fFfki8j0h9Un++yZQ6A9Xwyx6uShBH2q3tN2/RNHJ1PbtXu6fNx9spZYY5RvCFE1kvAzpBwF5sVfF7yQqr3jUecOp22ivj5XJps/4Tc/WzWUU6PahF2XUshrpb3qrwu1n1Ls5gWC9wUfgls33iEx/JMktujixIcRzUPSISbGCXUjF5ckabir6iKdu7cXBnKNwEKD1N87rdFucSsaWeMAzpSUD0NC+E3AbLgUnETZJhjre2Ovg8Tpywyg4ClEO+CvZuYYAmZ/9ild7klRzZfZ26f6cMI75cz1He8yh9ff9Do31Aw3QHOBOG4KtNrJD530b63P1VpP51jKiXmNmMGid6Pxs3fLcJHOnKIDT7+XlJigeCZYaFx1su4EpsKGt82yP6u/big1R2cu1cZbvFEerxBKa71DnA+8cC/vsYwie4y4zTjJ5Pul/nE2JAjbtRMATg9niR5W24ffBxsdODdyifvq0RsdXtMFkZoqkI+JR1xcrv4zzQ/1481ElUhi2gn//fvEhcLwftN0tll2aH6IZY1mqPok+AbkLa78bdiQ80pzct35D2+bxT8QwgiOBf8TY8u/XOAOfgY1biJCQxOv1TG2YFPxh/2Be02Nyp1TlFSWl2IClnRnuaMFTRnlxbzQtxnDvl3ctE5e3B1O6nXJ9MY8fCOYmV+6FoTjUba6tsFsyKWoFYL7GRGggXq915VM85JvKEX4l1UQA98PPP4g8zXnNIestqi38RrIJZmfMpxY9wnKm9nqxn8pFCyy7gsREe/o3BEe2K72e8loTOch1V8ettvcwFhh/brio5trPltPdf9VMnmg0ACfXCo6xborICOLKunOhpEtHIMwFO36SIUtqmyYwEIQ9B1WNeyI5rGuDU+NXCA4mPyWLjJsenVPTELtGFj4w2HCXDDrZtblaAfg6EVCbO62345lvkL8sifvaxz0P/n5QIGk3SeQuvepHnAal56BeKzL7XSZN5tzXEfrCc75KFW7zEcGtdxLHU4TQUr7SJ5EIYtj6+of00niax56a+T3PEbZgnZ/gZFk+6JoqYeiMqtTMUaVOwxGBC5PjCEDEEGOQ/EHc5IiV0ZtU6GC0q2/QcFJrUxxAo9CDVDgmJkqZhwXYvwnr0V08+++PUeZLYQL2Mchp/XppcI6pmnsnxFWt2p1ZEH5drvNkLvaLMHvggqKmDnOQw+PxEH4iZoNaitLeIRX8A==" />
+<meta name="be:messages" content="false" />
+<script type='text/javascript'>
+if (window.BEJSSDKObserver === undefined) {
+  (function(BEJSSDKObserver, $, undefined) {
+    var observer = void 0;
+    var listeners = [];
+    var readySet = [];
+    var doc = window.document;
+    var MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+
+    function checkSelector(selector, fn, indexList) {
+      var elements = doc.querySelectorAll(selector);
+  /**
+    issues on IE @see https://www.codesd.com/item/javascript-es6-not-a-function-error.html
+    elements = Array.from(elements);
+
+    */
+    for (var i = 0, len = elements.length; i < len; i++) {
+      /* -1 means all instances */
+      if (indexList != -1 && !(i in indexList)) {
+        continue;
+      }
+      var element = elements[i];
+      for (var j = 0; j < readySet.length; j++) {
+        if (readySet[j] == element.className || readySet[j] == element.id) {
+          return;
         }
-        #navbar {
-            background: #333;
-            overflow: hidden;
+      }
+      if (element.className) {
+        readySet.push(element.className);
+      }
+      if (element.id) {
+        readySet.push(element.id);
+      }
+
+      if (!element.ready || MutationObserver==null) {
+        element.ready = true;
+        fn.call(element, element);
+      }
+    }
+  }
+
+  function checkListeners() {
+    listeners.forEach(function (listener) {
+      return checkSelector(listener.selector, listener.fn, listener.indexList);
+    });
+  }
+
+  function removeListener(selector, fn) {
+    var i = listeners.length;
+    while (i--) {
+      var listener = listeners[i];
+      if (listener.selector === selector && listener.fn === fn) {
+        listeners.splice(i, 1);
+        if (!listeners.length && observer) {
+          observer.disconnect();
+          observer = null;
         }
-        #navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
+      }
+    }
+  }
+
+/**
+ * Fire event on first js selector
+ * @param selector string to watch on
+ * @param fn       callback function
+ * @param index_list can be undefined which means only first one
+ *                   or -1 which means all
+ *                   or a list of allowable indexes
+ */
+ BEJSSDKObserver.jsElementReady = function(selector, fn, index_list) {
+  if (index_list === undefined) {
+    index_list = [];
+    index_list.push(0);
+  }
+
+  if (MutationObserver != null) {
+    if (!observer) {
+      observer = new MutationObserver(checkListeners);
+      observer.observe(doc.documentElement, {
+        childList: true,
+        subtree: true
+      });
+    }
+    listeners.push({ selector: selector, fn: fn, indexList: index_list });
+  } else {
+    /* <= IE8 */
+    if (!document.addEventListener) {
+      /* log("<=IE8 attachEvent assignment"); */
+      document.addEventListener = document.attachEvent;
+    }
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var elements = doc.querySelectorAll(selector);
+      for (var i = 0, len = elements.length; i < len; i++) {
+        /* -1 means all instances */
+        if (index_list != -1 && !(i in index_list)) {
+          continue;
         }
-        #navbar a:hover {
-            background-color: #ddd;
-            color: black;
+        var element = elements[i];
+        element.ready = true;
+        fn.call(element, element);
+      }
+    });
+  }
+
+  checkSelector(selector, fn, index_list);
+  return function () {
+    return removeListener(selector, fn);
+  };
+};
+}(window.BEJSSDKObserver = window.BEJSSDKObserver || {}));
+}
+var jsElementReady = window.BEJSSDKObserver.jsElementReady;
+
+if (window.BELinkBlockGenerator === undefined) {
+  (function(BELinkBlockGenerator, $, undefined) {
+    BELinkBlockGenerator.MAXIMUM_HEADLINE_LENGTH = 100;
+    BELinkBlockGenerator.MAXIMUM_DESC_LENGTH = 200;
+
+    BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_URL_TYPE = 0;
+    BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_HEADLINE_TYPE = 1;
+    BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_DESCRIPTION_TYPE = 2;
+    BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_IMAGE_TYPE = 3;
+
+    BELinkBlockGenerator.REPLACEMENT_STRATEGY_OVERWRITE = 0;
+    BELinkBlockGenerator.REPLACEMENT_STRATEGY_POST_APPEND_ELEMENT = 1;
+    BELinkBlockGenerator.REPLACEMENT_STRATEGY_PRE_APPEND_ELEMENT = 2;
+    BELinkBlockGenerator.REPLACEMENT_STRATEGY_PRE_APPEND_PARENT = 3;
+
+    BELinkBlockGenerator.setMaximumHeadlineLength = function(length) {
+      BELinkBlockGenerator.MAXIMUM_HEADLINE_LENGTH = length;
+    };
+
+    BELinkBlockGenerator.setMaximumDescriptionLength = function(length) {
+      BELinkBlockGenerator.MAXIMUM_DESC_LENGTH = length;
+    };
+
+    BELinkBlockGenerator.generateIndividualLinks = function(parentElement, linkStructure, link) {
+      var link_level_element_tag = linkStructure[0];
+      var link_level_element = document.createElement(link_level_element_tag);
+      var link_attribute_dictionary = linkStructure[1];
+      var allowable_elements = linkStructure[2];
+      var children_link_structures = linkStructure[3];
+      for (var link_attribute_key in link_attribute_dictionary) {
+        link_level_element.setAttribute(link_attribute_key, link_attribute_dictionary[link_attribute_key]);
+      }
+
+      var added_something = false;
+      if (allowable_elements.indexOf(BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_URL_TYPE)>=0) {
+        link_level_element.setAttribute('href', link.url);
+        added_something = true;
+      }
+      if (allowable_elements.indexOf(BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_HEADLINE_TYPE)>=0 && link.h1) {
+        var headline_text = link.h1;
+        if (headline_text.length > BELinkBlockGenerator.MAXIMUM_HEADLINE_LENGTH) {
+          headline_text = headline_text.substring(0, BELinkBlockGenerator.MAXIMUM_HEADLINE_LENGTH) + '...';
         }
-        .section {
-            padding: 20px;
+        var text_node = document.createTextNode(headline_text);
+        link_level_element.appendChild(text_node);
+        added_something = true;
+      }
+      if (allowable_elements.indexOf(BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_DESCRIPTION_TYPE)>=0 && link.desc) {
+        var desc_text = link.desc;
+        if (desc_text.length > BELinkBlockGenerator.MAXIMUM_DESC_LENGTH) {
+          desc_text = desc_text.substring(0, BELinkBlockGenerator.MAXIMUM_DESC_LENGTH) + '...';
         }
-        .skills {
-            display: flex;
-            justify-content: space-around;
+        var text_node = document.createTextNode(desc_text);
+        link_level_element.appendChild(text_node);
+        added_something = true;
+      }
+      if (allowable_elements.indexOf(BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_IMAGE_TYPE)>=0 && link.image) {
+        link_level_element.setAttribute('src', link.image);
+        added_something = true;
+      }
+/**
+    don't emit for empty links, desc, headline, image
+    except for parent structures where allowable_length=0
+    */
+    if (!added_something && allowable_elements.length != 0) {
+
+      return;
+    }
+    /* go depth first */
+    for (var childrenIndex=0; childrenIndex<children_link_structures.length; childrenIndex++) {
+      var childLinkStructure = children_link_structures[childrenIndex];
+      BELinkBlockGenerator.generateIndividualLinks(link_level_element, childLinkStructure, link);
+    }
+    parentElement.appendChild(link_level_element);
+  };
+
+  BELinkBlockGenerator.insertLinkBlocks = function(targetElement, replacementStrategy, overallStructure, linkStructure, links,
+                                                   titleStructure) {
+    if (targetElement == null) {
+      return;
+    }
+
+    if (replacementStrategy == BELinkBlockGenerator.REPLACEMENT_STRATEGY_OVERWRITE) {
+      while (targetElement.firstChild) {
+        targetElement.removeChild(targetElement.firstChild);
+      }
+    }
+
+    var previousElement = targetElement;
+    for (var i=0;i<overallStructure.length;i++) {
+      var level_definition = overallStructure[i];
+      var level_element_tag = level_definition[0];
+      var level_element = document.createElement(level_element_tag);
+      var attribute_dictionary = level_definition[1];
+      for (var attribute_key in attribute_dictionary) {
+        level_element.setAttribute(attribute_key, attribute_dictionary[attribute_key]);
+      }
+
+      /* need to place title structure */
+      if (titleStructure && titleStructure[0] == i) {
+        var title_element_tag = titleStructure[1];
+        var title_element = document.createElement(title_element_tag);
+        var title_attribute_dictionary = titleStructure[2];
+        var title_text_content = titleStructure[3];
+        for (var title_attribute_key in title_attribute_dictionary) {
+          title_element.setAttribute(title_attribute_key, title_attribute_dictionary[title_attribute_key]);
         }
-        .skill {
-            width: 30%;
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
+
+        var title_text_node = document.createTextNode(title_text_content);
+        title_element.appendChild(title_text_node);
+
+
+        level_element.appendChild(title_element);
+      }
+
+      /* last level place links */
+      if (i == overallStructure.length-1) {
+        for (var link_i=0; link_i < links.length; link_i++) {
+          var link = links[link_i];
+          for (var linkStructureIndex=0;linkStructureIndex < linkStructure.length; linkStructureIndex++) {
+            BELinkBlockGenerator.generateIndividualLinks(level_element, linkStructure[linkStructureIndex], link)
+          }
         }
-        /* Add your custom CSS here */
-    </style>
+      }
+
+      /* first level child we need to check placement */
+      if (previousElement == targetElement) {
+        if (replacementStrategy == BELinkBlockGenerator.REPLACEMENT_STRATEGY_PRE_APPEND_ELEMENT) {
+          /* 2 means insert right before */
+          previousElement.insertBefore(level_element, targetElement.firstChild);
+        } else if (replacementStrategy == BELinkBlockGenerator.REPLACEMENT_STRATEGY_PRE_APPEND_PARENT) {
+          /* 3 means insert right before at parent level */
+          var parentElement = previousElement.parentElement;
+          parentElement.insertBefore(level_element, previousElement);
+        } else {
+          previousElement.appendChild(level_element);
+        }
+      } else {
+        previousElement.appendChild(level_element);
+      }
+      previousElement = level_element;
+    }
+  };
+}(window.BELinkBlockGenerator = window.BELinkBlockGenerator || {}))
+};
+</script>
+
+<style>
+.be-ix-link-block .be-related-link-container{margin-top:30px;text-align:center}
+  .be-ix-link-block .be-related-link-container .be-label{margin:0;font-size: 12.8px;font-weight: bold;color: white;line-height: 1rem;}
+  .be-ix-link-block .be-related-link-container .be-list{display:inline-block;list-style:none;margin:0;padding:0}
+  .be-ix-link-block .be-related-link-container .be-list .be-list-item{display:inline-block;margin-right:20px;padding-bottom: 6px;}
+  .be-ix-link-block .be-related-link-container .be-list .be-list-item .be-related-link{font-size: 12.8px;font-weight: bold;color: white;}
+  .be-ix-link-block .be-related-link-container .be-list .be-list-item:last-child{margin-right:0}
+  @media (max-width: 767px) {
+  .be-ix-link-block .be-related-link-container .be-label{width:100%;margin-bottom:10px;font-size: 14px;}
+  .be-ix-link-block .be-related-link-container .be-list{display:block;width:100%}
+  .be-ix-link-block .be-related-link-container .be-list .be-list-item{display:block;margin-right:0;}
+  .be-ix-link-block .be-related-link-container .be-list .be-list-item .be-related-link {font-size: 14px;}
+  }
+  @media (min-width: 768px) {
+  .be-ix-link-block .be-related-link-container{display:flex}
+  .be-ix-link-block .be-related-link-container .be-label{display:inline-block;margin-right:20px;padding-left: 14px;flex-grow:0;flex-shrink:0}
+  .be-ix-link-block .be-related-link-container .be-list {text-align: start;}
+  }
+</style>
+
+
+<script data-cfasync="false" id="marvel" data-customerid="f00000000246364" src="https://marvel-b2-cdn.bc0a.com/marvel.js"></script>
+
+<script>
+(function() {
+  var becookiescript = document.createElement("script");
+  becookiescript.type = "text/javascript";
+  becookiescript.async = true;
+  becookiescript.id="becookiebarscriptid";
+  becookiescript.setAttribute("data-customerid","f00000000246364");
+  becookiescript.setAttribute("data-testmode","false");
+  becookiescript.setAttribute("data-cookielinkurl","https://policies.olemiss.edu/ShowDetails.jsp?istatPara=1&policyObjidPara=12813271");
+  becookiescript.setAttribute("data-fullhtmltext","<div id='becookiebarpanelid' style='width: 100%; border-radius: 0px; background: rgb(78, 82, 86); display: flex; z-index: 100000; font-size: small; opacity: 1; position: fixed; bottom: 0px; right: 0px; color: rgb(255, 255, 255); justify-content: center; visibility: hidden;'><div id='becookie_desktop_outerdiv' style='width: 100%;display: flex;height: 60px;justify-content: center;margin: auto;align-items: center;vertical-align: middle;'><div id='becookie_desktop_content' style='font-size: 1.8vw;word-spacing: 1px;align-items: center;max-width: 100%;width: 100%;text-align: center;margin: 0 70px;font-weight: 100;'><div style=''><p id='becookie_text_content' style='text-shadow:none; padding: 0 4px;margin: 0px 0;display: inline-block;font-size: inherit;color: inherit;font-family: inherit;line-height: inherit;'><span id='becookiebartextid' style=''>We use cookies to improve your experience.</span></p><p style='text-shadow:none;margin: 0;display: inline-block;padding: 0;font-size: inherit;color: inherit;font-family: inherit;line-height: inherit;'>Please read our <a tabindex='1' aria-label='Read privacy policy' role='link' id='bepolicylinktextid' style='text-shadow:none;cursor: pointer;margin: 0;text-decoration: underline;color: inherit;display: inline; font-weight: inherit;' onclick='becookielinktextclicked()'>Privacy Policy</a> or click <button tabindex='2' aria-label='Accept privacy policy' role='button' id='becookiebarbuttonid' style='margin: 0;cursor: pointer;font-weight: 600;text-decoration: underline;border: none;background: none;padding: 0;font-size: inherit;color: inherit; font-family: inherit;' onclick='beacceptcookie()'>Accept</button>.<button tabindex='3' aria-label='Close privacy policy banner' role='button' id='becookie_close_button' onclick='beclosecookie()' style='display: inline-block;font-size: 3vw;cursor:pointer;font-family: none;font-weight: 100;position: absolute;margin: 0;top: -2px;right: 10px;background: none;border: none;padding: 0;color: inherit;'>×</button></p></div></div></div></div>");
+  becookiescript.setAttribute("data-mobilefullhtmltext","<div id='becookiebarpanelid' style='display: flex; width: 100%; border-radius: 0px; background: rgb(78, 82, 86); z-index: 100000; opacity: 1; position: fixed; bottom: 0px; left: 0px; color: rgb(255, 255, 255); align-items: center; height: 60px; visibility: hidden; justify-content: center; font-family: inherit;'> <div style='max-width: 370px;text-align: center;display: flex;box-sizing: border-box;padding: 0 35px;position: relative;'><p id='becookiebartextid' style='text-shadow:none;margin: auto;font-size: 14px;line-height: 18px;color: inherit;font-weight: 100;'>We use cookies to improve your experience. <span style=' '>Please read our <a tabindex='1' aria-label='Read Privacy Policy' role='link' id='bepolicylinktextid' style='text-shadow:none;cursor: pointer;display: inline-block;text-decoration: underline;color: inherit; font-weight: inherit;' onclick='becookielinktextclicked()'>Privacy Policy</a> <span style=' display: inline-block; '> or click <button tabindex='2' aria-label='Accept Privacy Policy' role='button' id='becookiebarbuttonid' style='cursor: pointer;text-decoration: underline;font-weight: 600;padding: 0;margin: 0;border: none;background: none;font-size: inherit;color: inherit; font-family: inherit;' onclick='beacceptcookie()'>Accept</button>.</span></span></p></div><button tabindex='3' aria-label='Close Privacy Policy banner' role='button' onclick='beclosecookie()' style='position: absolute;right: 10px;top: -3px;font-size: 29px;cursor:pointer;font-family:none;font-weight:100;color: inherit;margin: 0;padding: 0;background: none;border: none;'>×</button></div>");
+  becookiescript.src = "https://consents-cf.bc0a.com/consentbar/corejs/becookiebar.js";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(becookiescript, s);
+
+  var becookie_stylesheet_interval = window.setInterval(function(){
+    var becookiebar = document.querySelector('#becookiebarid');
+    if(becookiebar){
+      
+      becookieAddStylesheet('#becookie_desktop_content{font-size:18px !important}#becookie_close_button{font-size:28px !important;}', 'screen and (min-width: 1000px)');
+      becookieAddStylesheet('#becookiebartextid{font-size:12px !important; line-height:15px !important;} #becookiebarpanelid > button{font-size:25px !important;} #becookiebarpanelid > div{max-width:335px !important;}', 'screen and (max-width: 365px)');
+
+      var becookie_panel = document.querySelector('#becookiebarpanelid');
+      if(becookie_panel) becookie_panel.style.visibility = 'visible';
+
+      clearInterval(becookie_stylesheet_interval);
+    }
+  }, 100);
+
+  window.setTimeout(function(){
+    clearInterval(becookie_stylesheet_interval);
+  }, 15000);
+
+  window.onresize = function() {
+    var becookie_panel = document.querySelector('#becookiebarpanelid');
+    if(becookie_panel) becookie_panel.style.visibility = 'visible';
+  };
+  
+    
+})();
+</script>
+<script type='text/javascript'>
+      function positionLinkBlock(targetContainer) {
+          if (targetContainer != null) {
+              var strLinkBlock = '<div class="be-ix-link-block"><div class="be-related-link-container"><div class="be-label">Also of Interest:</div><ul class="be-list"><li class="be-list-item"><a class="be-related-link" href="https://greeks.olemiss.edu/join/">Guide to Joining a Fraternity or Sorority</a></li><li class="be-list-item"><a class="be-related-link" href="https://panhellenic.olemiss.edu/recruitment/">A Letter from the Vice President of Recruitment</a></li><li class="be-list-item"><a class="be-related-link" href="https://families.olemiss.edu/recruitment/">Greek 101</a></li></ul> </div></div>';
+              targetContainer.insertAdjacentHTML('beforebegin', strLinkBlock);
+          }
+      }
+   
+      jsElementReady('.legal', positionLinkBlock);
+   
+  </script>
+	<!--BE Head: End-->
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	
+	
+	<title>Fraternity &amp; Sorority Life | The University of Mississippi</title>
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+	<link rel="stylesheet" href="https://greeks.olemiss.edu/wp-content/themes/greek-child/style.css">
+	
+	<link rel="pingback" href="https://greeks.olemiss.edu/xmlrpc.php">
+	
+	
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v20.13 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="Interested in learning about Fraternity &amp; Sorority Life at the University of Mississippi? Explore all resources now." />
+	<link rel="canonical" href="https://greeks.olemiss.edu/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Fraternity &amp; Sorority Life | Ole Miss" />
+	<meta property="og:description" content="Interested in learning about Fraternity &amp; Sorority Life at the University of Mississippi? Explore all resources now." />
+	<meta property="og:url" content="https://greeks.olemiss.edu/" />
+	<meta property="og:site_name" content="Fraternity &amp; Sorority Life" />
+	<meta property="article:modified_time" content="2023-06-30T20:43:17+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://greeks.olemiss.edu/","url":"https://greeks.olemiss.edu/","name":"Fraternity & Sorority Life | Ole Miss","isPartOf":{"@id":"https://greeks.olemiss.edu/#website"},"datePublished":"2016-03-03T15:07:35+00:00","dateModified":"2023-06-30T20:43:17+00:00","description":"Interested in learning about Fraternity & Sorority Life at the University of Mississippi? Explore all resources now.","breadcrumb":{"@id":"https://greeks.olemiss.edu/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://greeks.olemiss.edu/"]}]},{"@type":"BreadcrumbList","@id":"https://greeks.olemiss.edu/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://greeks.olemiss.edu/#website","url":"https://greeks.olemiss.edu/","name":"Fraternity &amp; Sorority Life","description":"The University of Mississippi","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://greeks.olemiss.edu/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//greeks.olemiss.edu' />
+<link rel='dns-prefetch' href='//www.google.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//greeks.wp2.olemiss.edu' />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/greeks.olemiss.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='mystyles-css' href='https://greeks.olemiss.edu/wp-content/themes/conversion.08a2/mystyles.css?ver=6.3' type='text/css' media='all' />
+<link rel='stylesheet' id='um-fonts-css' href='//fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%7CSource+Sans+Pro%3A300%2C300i%2C400%2C400i%2C600%2C600i&#038;ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://greeks.olemiss.edu/wp-includes/css/dist/block-library/style.min.css?ver=6.3' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='cpsh-shortcodes-css' href='https://greeks.olemiss.edu/wp-content/plugins/column-shortcodes//assets/css/shortcodes.css?ver=1.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='collapscore-css-css' href='https://greeks.olemiss.edu/wp-content/plugins/jquery-collapse-o-matic/css/core_style.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='collapseomatic-css-css' href='https://greeks.olemiss.edu/wp-content/plugins/jquery-collapse-o-matic/css/light_style.css?ver=1.6' type='text/css' media='all' />
+<link rel='stylesheet' id='rgg-simplelightbox-css' href='https://greeks.wp2.olemiss.edu/wp-content/plugins/responsive-gallery-grid/lib/simplelightbox/simplelightbox.min.css?ver=2.3.10' type='text/css' media='all' />
+<link rel='stylesheet' id='slickstyle-css' href='https://greeks.wp2.olemiss.edu/wp-content/plugins/responsive-gallery-grid/lib/slick/slick.1.9.0.min.css?ver=2.3.10' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-theme-css' href='https://greeks.wp2.olemiss.edu/wp-content/plugins/responsive-gallery-grid/lib/slick/slick-theme.css?ver=2.3.10' type='text/css' media='all' />
+<link rel='stylesheet' id='rgg-style-css' href='https://greeks.wp2.olemiss.edu/wp-content/plugins/responsive-gallery-grid/css/style.css?ver=2.3.10' type='text/css' media='all' />
+<link rel='stylesheet' id='imt_font-awesome-css' href='https://greeks.olemiss.edu/wp-content/plugins/indeed-my-team/files/css/font-awesome.min.css?ver=6.3' type='text/css' media='all' />
+<link rel='stylesheet' id='imt_be_style-css' href='https://greeks.olemiss.edu/wp-content/plugins/indeed-my-team/files/css/style.css?ver=6.3' type='text/css' media='all' />
+<link rel='stylesheet' id='imt_owl_carousel_css-css' href='https://greeks.olemiss.edu/wp-content/plugins/indeed-my-team/files/css/owl.carousel.css?ver=6.3' type='text/css' media='all' />
+<link rel='stylesheet' id='upw_theme_standard-css' href='https://greeks.olemiss.edu/wp-content/plugins/ultimate-posts-widget/css/upw-theme-standard.min.css?ver=6.3' type='text/css' media='all' />
+<link rel='stylesheet' id='new-royalslider-core-css-css' href='https://greeks.wp2.olemiss.edu/wp-content/plugins/new-royalslider/lib/royalslider/royalslider.css?ver=3.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='rsUni-css-css' href='https://greeks.wp2.olemiss.edu/wp-content/plugins/new-royalslider/lib/royalslider/skins/universal/rs-universal.css?ver=3.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css' href='https://greeks.olemiss.edu/wp-content/plugins/tablepress/css/build/default.css?ver=2.1.5' type='text/css' media='all' />
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js' id='jquery-js'></script>
+<script type='text/javascript' src='https://greeks.olemiss.edu/wp-content/themes/conversion.08a2/js/selectivizr.js?ver=1.0' id='selectivizr-js'></script>
+<script type='text/javascript' src='https://greeks.olemiss.edu/wp-content/themes/conversion.08a2/js/search.js?ver=1.0' id='search-js'></script>
+<script type='text/javascript' src='https://www.google.com/jsapi?key=AIzaSyA5m1Nc8ws2BbmPRwKu5gFradvD_hgq6G0' id='googlefeed-js'></script>
+<script type='text/javascript' src='https://greeks.olemiss.edu/wp-content/themes/conversion.08a2/js/rss-feed1.js?ver=1.0' id='rss1-js'></script>
+<script type='text/javascript' src='https://greeks.olemiss.edu/wp-content/themes/conversion.08a2/js/rss-feed2.js?ver=1.0' id='rss2-js'></script>
+<script type='text/javascript' src='https://greeks.olemiss.edu/wp-content/themes/conversion.08a2/js/rss-feed3.js?ver=1.0' id='rss3-js'></script>
+<script type='text/javascript' src='https://greeks.olemiss.edu/wp-content/themes/conversion.08a2/js/skiplink.js?ver=1.0' id='skiplink-js'></script>
+<script type='text/javascript' src='https://greeks.olemiss.edu/wp-content/plugins/indeed-my-team/files/js/isotope.pkgd.min.js' id='imt_isotope_pkgd_min-js'></script>
+<script type='text/javascript' src='https://greeks.olemiss.edu/wp-content/plugins/indeed-my-team/files/js/owl.carousel.js' id='imt_owl_carousel_js-js'></script>
+<link rel='shortlink' href='https://greeks.olemiss.edu/' />
+<!-- <meta name="vfbPro" version="2.5.1" /> -->
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style> 
+  <!--[if IE]>
+<link rel="stylesheet" type="text/css" href="https://greeks.olemiss.edu/wp-content/themes/conversion.08a2/styles_ie8.css" />
+<![endif]-->
+  
+  
 </head>
 
-<body>
+<body id="home" class="home page-template page-template-page-Slider_full-width page-template-page-Slider_full-width-php page page-id-759">
+	<div id="outerwrapper">
+<div id="skiptocontent">
+        <a href="#main-content">skip to main content</a>
+</div>
+		<header>
+			
+			<!--virtual include - umdeptheader.htm-->
+ 
+ 
+			<div id="umstripContainer">
+			<div id="umstrip">
+			<div class="watermark"></div>
+				<div class="umstriplogo"> <a href="https://www.olemiss.edu/">The University of Mississippi</a> </div>
+				<div class="searchme">
+                
+				  <form onsubmit="return makeSearch()">
+					<label><span class="hidetext">Search the UM website</span>
+					  <input type="text" placeholder="Search UM" id="q">
+					</label>
+				  </form>
+				</div>
+				
+			  </div><!--  umstrip  -->
+			</div><!--  umstripContainer  -->
+			
+			 <!-- virtual include - _includes/headings.htm -->
+			<div id="deptheadContainer">
+			 <div id="depthead">
+				<div class="combined"> <span class="prefix"><!--<a href="index.html">Department Prefix</a>--></span>
+				  <!--h2--><a class="department" href="https://greeks.olemiss.edu/">Fraternity &amp; Sorority Life</a><!--/h2-->
+					<div class="description">The University of Mississippi</div>
+				</div>
+			  </div><!--  depthead  -->
+			</div><!-- deptheadContainer  -->
+			
+			
+		</header>
+		
+		
+		
+		
+		<div id="navContainer" class="btcf">
+		<nav id="mainnav" class="btcf" role="banner">
+			<div class="menu-fraternity-sorority-life-official-container"><ul id="menu-fraternity-sorority-life-official" class="menu"><li id="menu-item-951" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-951"><a href="https://greeks.wp2.olemiss.edu/about-us/">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-1147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1147"><a href="https://greeks.olemiss.edu/fsl-philosophy/">Mission, Vision, &amp; Values</a></li>
+	<li id="menu-item-955" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-955"><a href="https://greeks.wp2.olemiss.edu/staff/">Staff</a></li>
+	<li id="menu-item-1516" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1516"><a href="https://greeks.olemiss.edu/contact-us/">Contact Us</a></li>
+</ul>
+</li>
+<li id="menu-item-1358" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1358"><a href="https://greeks.olemiss.edu/about-our-community/">Our Community</a>
+<ul class="sub-menu">
+	<li id="menu-item-956" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-956"><a href="#">Councils</a>
+	<ul class="sub-menu">
+		<li id="menu-item-959" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-959"><a href="http://nphc.wp2.olemiss.edu">National Pan-Hellenic Council</a></li>
+		<li id="menu-item-960" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-960"><a href="http://panhellenic.wp2.olemiss.edu">Panhellenic Council</a></li>
+		<li id="menu-item-961" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-961"><a href="http://ifc.wp2.olemiss.edu">Interfraternity Council</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1506"><a href="https://greeks.olemiss.edu/chapters/">Chapters</a></li>
+	<li id="menu-item-1513" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1513"><a href="https://greeks.olemiss.edu/honor-societies/">Honor Societies</a></li>
+	<li id="menu-item-1545" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1545"><a href="https://greeks.olemiss.edu/signature-programs/">Signature Programs</a></li>
+	<li id="menu-item-1578" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1578"><a href="https://greeks.olemiss.edu/fsl-advisory-board/">Fraternity &amp; Sorority Life Advisory Board</a></li>
+</ul>
+</li>
+<li id="menu-item-1401" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1401"><a href="https://greeks.olemiss.edu/join-2/">How to Join</a>
+<ul class="sub-menu">
+	<li id="menu-item-1403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1403"><a href="https://ifc.olemiss.edu/how-to-join/">IFC Recruitment</a></li>
+	<li id="menu-item-1402" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1402"><a href="https://nphc.olemiss.edu/intake/">NPHC Intake</a></li>
+	<li id="menu-item-1404" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1404"><a href="https://panhellenic.olemiss.edu/recruitment/">Panhellenic Recruitment</a></li>
+	<li id="menu-item-1808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1808"><a href="https://greeks.olemiss.edu/greek-fee/">Greek Fee</a></li>
+</ul>
+</li>
+<li id="menu-item-1359" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1359"><a href="https://greeks.olemiss.edu/score-cards/">Scorecards</a></li>
+<li id="menu-item-1509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1509"><a href="https://greeks.olemiss.edu/resources/">Resources</a>
+<ul class="sub-menu">
+	<li id="menu-item-1171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1171"><a href="https://greeks.olemiss.edu/community-academic-reports/">Community Academic Reports</a></li>
+	<li id="menu-item-2119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2119"><a href="https://greeks.olemiss.edu/an-open-letter-to-our-fraternity-sorority-community/">Open Letter to FSL Community</a></li>
+	<li id="menu-item-965" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-965"><a href="https://greeks.wp2.olemiss.edu/hazing-resources-for-parents/">Hazing Resources</a></li>
+	<li id="menu-item-964" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-964"><a href="https://greeks.wp2.olemiss.edu/parent-faq/">Parent FAQs</a></li>
+	<li id="menu-item-2192" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2192"><a href="https://greeks.olemiss.edu/meal-plans-for-2022-2023/">Greek Meal Plans 2022-2023</a></li>
+	<li id="menu-item-1599" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1599"><a href="https://greeks.olemiss.edu/greek-awards/">Fraternity &amp; Sorority Excellence Awards</a></li>
+</ul>
+</li>
+<li id="menu-item-1963" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1963"><a href="https://greeks.olemiss.edu/um-fraternities-sororities-endowment/">FSL Endowment</a></li>
+</ul></div>		</nav><!--  mainnav  -->
+		</div><!--  navContainer  -->
 
-    <!-- Navigation -->
-    <div id="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-    </div>
+<div id="main-content" class="btcf">
 
-    <!-- Home Section -->
-    <div id="home" class="section">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Your introduction here.</p>
-    </div>
+<!-- virtual /includes/dynamic/13/alert.htm  --> 
+<div id='noalert'></div>
 
-    <div id="container">
-    <span id="Vedant Grover"></span>
-    <span id="Mechatronics Engineering"></span>
+
+<div class="royalslider">
+
+	<li id="new_royalslider_widget-5" class="widget new_royalslider_widget"><h2 class="widgettitle">Fraternity &#038; Sorority Life</h2>
+<div id="new-royalslider-1" class="royalSlider new-royalslider-1 rsUni rs-default-template" style="width:100%;;" data-rs-options='{&quot;template&quot;:&quot;default&quot;,&quot;image_generation&quot;:{&quot;imageWidth&quot;:&quot;&quot;,&quot;imageHeight&quot;:&quot;&quot;,&quot;thumbImageWidth&quot;:&quot;&quot;,&quot;thumbImageHeight&quot;:&quot;&quot;},&quot;thumbs&quot;:{&quot;thumbWidth&quot;:96,&quot;thumbHeight&quot;:72},&quot;autoPlay&quot;:{&quot;enabled&quot;:&quot;true&quot;,&quot;delay&quot;:4000,&quot;stopAtAction&quot;:&quot;false&quot;},&quot;video&quot;:[],&quot;block&quot;:{&quot;moveOffset&quot;:20,&quot;speed&quot;:400,&quot;delay&quot;:200},&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:&quot;&quot;,&quot;autoScaleSlider&quot;:&quot;true&quot;,&quot;autoScaleSliderWidth&quot;:1200,&quot;slidesSpacing&quot;:&quot;&quot;,&quot;imageScaleMode&quot;:&quot;fill&quot;,&quot;imageScalePadding&quot;:&quot;&quot;,&quot;controlNavigation&quot;:&quot;none&quot;,&quot;loop&quot;:&quot;true&quot;,&quot;loopRewind&quot;:&quot;true&quot;,&quot;randomizeSlides&quot;:&quot;true&quot;}'>
+<div class="rsContent">
+  <img class="rsImg" src="https://greeks.wp2.olemiss.edu/wp-content/uploads/sites/42/2018/07/ADPI-6-1024x510.jpg" alt="ADPI 6"/>
+  
+  
+  
+</div>
+<div class="rsContent">
+  <img class="rsImg" src="https://greeks.wp2.olemiss.edu/wp-content/uploads/sites/42/2018/07/36737346_381002052424591_3493462991964209152_o-1024x683.jpg" alt="36737346_381002052424591_3493462991964209152_o"/>
+  
+  
+  
+</div>
+<div class="rsContent">
+  <img class="rsImg" src="https://greeks.wp2.olemiss.edu/wp-content/uploads/sites/42/2018/07/ato-1.jpg" alt="ato 1"/>
+  
+  
+  
+</div>
+<div class="rsContent">
+  <img class="rsImg" src="https://greeks.wp2.olemiss.edu/wp-content/uploads/sites/42/2018/07/IMG_7100-1-1024x683.jpg" alt="IMG_7100"/>
+  
+  
+  
+</div>
+<div class="rsContent">
+  <img class="rsImg" src="https://greeks.wp2.olemiss.edu/wp-content/uploads/sites/42/2018/07/28167989_1695716963823303_6962453265246271633_n.jpg" alt="28167989_1695716963823303_6962453265246271633_n"/>
+  
+  
+  
+</div>
+<div class="rsContent">
+  <img class="rsImg" src="https://greeks.wp2.olemiss.edu/wp-content/uploads/sites/42/2018/12/Screen-Shot-2018-12-03-at-2.30.11-PM-1024x521.png" alt="Screen Shot 2018-12-03 at 2.30.11 PM"/>
+  
+  
+  
+</div>
+<div class="rsContent">
+  <img class="rsImg" src="https://greeks.wp2.olemiss.edu/wp-content/uploads/sites/42/2018/07/Chi-O-1-1024x683.jpg" alt="Chi O"/>
+  
+  
+  
+</div>
+<div class="rsContent">
+  <img class="rsImg" src="https://greeks.wp2.olemiss.edu/wp-content/uploads/sites/42/2018/07/phi-mu-1.jpg" alt="phi mu 1"/>
+  
+  
+  
+</div>
+<div class="rsContent">
+  <img class="rsImg" src="https://greeks.wp2.olemiss.edu/wp-content/uploads/sites/42/2018/07/KSIG-2.png" alt="KSIG 2"/>
+  
+  
+  
+</div>
+<div class="rsContent">
+  <img class="rsImg" src="https://greeks.wp2.olemiss.edu/wp-content/uploads/sites/42/2018/07/pi-phi-1-1-1024x785.jpg" alt="pi phi 1"/>
+  
+  
+  
+</div>
+<div class="rsContent">
+  <img class="rsImg" src="https://greeks.wp2.olemiss.edu/wp-content/uploads/sites/42/2018/07/chi-psi-1-.png" alt="chi psi 1"/>
+  
+  
+  
+</div>
+<div class="rsContent">
+  <img class="rsImg" src="https://greeks.wp2.olemiss.edu/wp-content/uploads/sites/42/2018/07/phi-mu-9-1024x682.jpg" alt="phi mu 9"/>
+  
+  
+  
+</div>
+<div class="rsContent">
+  <img class="rsImg" src="https://greeks.wp2.olemiss.edu/wp-content/uploads/sites/42/2019/07/aoii-8.jpg" alt="aoii 8"/>
+  
+  
+  
 </div>
 
-<svg id="filters">
-    <defs>
-        <filter id="threshold">
-            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
-                  0 1 0 0 0
-                  0 0 1 0 0
-                  0 0 0 255 -140" />
-        </filter>
-    </defs>
-</svg>
+</div>
+</li>
+ 
 
-    <!-- About Me Section -->
-    <div id="about" class="section">
-        <h2>About Me</h2>
-        <p>Your description here.</p>
-    </div>
+</div><!--  slider  -->
 
-    <!-- Projects Section -->
-    <div id="projects" class="section">
-        <h2>Projects</h2>
-        <p>Details of your projects here.</p>
-    </div>
+<div class="infobox"></div>
 
-    <!-- Skills Section -->
-    <div id="skills" class="section">
-        <h2>Skills</h2>
-        <div class="skills">
-            <div class="skill">Skill 1</div>
-            <div class="skill">Skill 2</div>
-            <div class="skill">Skill 3</div>
-        </div>
-    </div>
+<main>
+<div class="main">
+				
+		<div class="post" id="post-759">
 
-    <!-- Resume Section -->
-    <div id="resume" class="section">
-        <h2>Resume</h2>
-        <p><a href="resume.pdf">Download My Resume</a></p>
-    </div>
 
-    <!-- Contact Section -->
-    <div id="contact" class="section">
-        <h2>Contact Me</h2>
-        <p>Email: vedant.grover@uwaterloo.ca</p>
-        <!-- You can add a form here if you want to use a backend service to handle submissions -->
-    </div>
 
-    <script>
-        // You can add your custom JavaScript here for animations and effects
-    </script>
+			<div class="entry">
+            			<div class="mobile">
+					<nav id="nav_menu-2" class="sidebar contactblock widget_nav_menu" role="directory"><div class="menu-sidebar-contactblock-menu-container"><ul id="menu-sidebar-contactblock-menu" class="menu"><li id="menu-item-699" class="assist menu-item menu-item-type-custom menu-item-object-custom menu-item-699"><a>For Assistance</a></li>
+<li id="menu-item-701" class="phnumber menu-item menu-item-type-custom menu-item-object-custom menu-item-701"><a href="tel:662-915-7609">662-915-7609</a></li>
+<li id="menu-item-698" class="location menu-item menu-item-type-custom menu-item-object-custom menu-item-698"><a target="_blank" rel="noopener" href="https://map.olemiss.edu/?id=562&#038;mrkIid=1000102322">218 Student Union Drive, Suite D, University, MS 38677</a></li>
+</ul></div></nav> 
+        			</div><!--  mobile  -->
 
+				<p>Greetings!</p>
+<p style="text-align: left">Thank you for your interest in Fraternity &amp; Sorority Life at the University of Mississippi. With nearly 7,900 affiliated students, representing individuals from across the country and around the world, we are a robust community of engaged scholars, leaders and community servants. Comprising 32 organizations within the Interfraternity Council, National Pan-Hellenic Council and College Panhellenic Council, we are proud to offer a variety of membership opportunities and transformative experiences for our members.</p>
+<p style="text-align: left">As a university entity, Fraternity &amp; Sorority Life provides services that culminate in comprehensive support for our members, alumni, advisors, organizations, and councils. In addition to administration &amp; planning, community member &amp; council development, and leadership education, Fraternity &amp; Sorority Life provides advising to all three governing councils &amp; two honor societies, house director support &amp; training, chapter adviser support, intentional educational programming, and recruitment &amp; intake management.</p>
+<p>Thanks for your interest in Fraternity &amp; Sorority Life at The Flagship.</p>
+<p>Hotty Toddy!</p>
+<hr />
+<h3></h3>
+<p>&nbsp;</p>
+
+				
+			</div>
+
+
+		</div>
+		
+		
+				
+</div>
+</main><!-- main  -->
+
+	
+
+<div class="aside">
+
+
+<div class="infoside">
+	<nav id="nav_menu-2" class="sidebar contactblock widget_nav_menu" role="directory"><div class="menu-sidebar-contactblock-menu-container"><ul id="menu-sidebar-contactblock-menu-1" class="menu"><li class="assist menu-item menu-item-type-custom menu-item-object-custom menu-item-699"><a>For Assistance</a></li>
+<li class="phnumber menu-item menu-item-type-custom menu-item-object-custom menu-item-701"><a href="tel:662-915-7609">662-915-7609</a></li>
+<li class="location menu-item menu-item-type-custom menu-item-object-custom menu-item-698"><a target="_blank" rel="noopener" href="https://map.olemiss.edu/?id=562&#038;mrkIid=1000102322">218 Student Union Drive, Suite D, University, MS 38677</a></li>
+</ul></div></nav> 
+ </div><!--  infoside  -->   
+ 
+ <div class="infoside">
+    <nav id="nav_menu-3" class="sidebar deptlinks widget_nav_menu" role="complimentary"><div class="menu-sidebar-links-container"><ul id="menu-sidebar-links" class="menu"><li id="menu-item-722" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-722"><a href="https://ifc.wp2.olemiss.edu/inter-fraternity-council-b/">Interfraternity Council</a></li>
+<li id="menu-item-723" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-723"><a href="https://nphc.wp2.olemiss.edu/index-b/">National Pan-Hellenic Council</a></li>
+<li id="menu-item-721" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-721"><a href="https://panhellenic.wp2.olemiss.edu/panhellenic-council-b/">Panhellenic Council</a></li>
+</ul></div></nav> 
+</div><!--  infoside  -->
+
+
+
+    
+				
+	
+	 
+
+
+    <nav id="nav_menu-4" class="sidebar otherlinks widget_nav_menu" role="complimentary"><div class="menu-sidebar-additional-links-container"><ul id="menu-sidebar-additional-links" class="menu"><li id="menu-item-1237" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1237"><a href="https://cm.maxient.com/reportingform.php?UnivofMississippi&#038;layout_id=6">Confidential Hazing Report Form</a></li>
+<li id="menu-item-2316" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2316"><a href="https://conflictresolution.olemiss.edu/student-organization-conduct/">Registered Student Organizational Conduct</a>
+<ul class="sub-menu">
+	<li id="menu-item-2318" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2318"><a href="https://conflictresolution.olemiss.edu/college-panhellenic-council/">CPH Organizational Conduct</a></li>
+	<li id="menu-item-2319" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2319"><a href="https://conflictresolution.olemiss.edu/student-organization-conduct/interfraternity-council-ifc/">IFC Organizational Conduct</a></li>
+	<li id="menu-item-2320" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2320"><a href="https://conflictresolution.olemiss.edu/national-pan-hellenic-council-nphc/">NPHC Organizational Conduct</a></li>
+</ul>
+</li>
+<li id="menu-item-1347" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1347"><a href="https://ifc.olemiss.edu/formal-recruitment/">IFC Fraternity Formal Recruitment Registration</a></li>
+<li id="menu-item-1144" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1144"><a href="https://nphc.olemiss.edu/intake/">NPHC Greek Forum Registration and Intake Information</a></li>
+<li id="menu-item-1346" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1346"><a href="https://panhellenic.olemiss.edu/register/">Panhellenic Primary Sorority Recruitment Registration</a></li>
+<li id="menu-item-1601" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1601"><a href="https://greeks.olemiss.edu/greek-awards/">Fraternity &amp; Sorority Excellence Awards</a>
+<ul class="sub-menu">
+	<li id="menu-item-1150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1150"><a href="https://olemiss.campuslabs.com/engage/submitter/form/start/242505">Fraternity &amp; Sorority Facilities Project Request Submission</a></li>
+</ul>
+</li>
+</ul></div></nav> 
+
+
+
+
+  
+</div>
+	<!--  aside  -->
+</div><!--  main-content  -->
+
+</div><!--  outerwrapper  -->
+
+
+
+<footer class="department">
+
+
+
+<div id="widgetized-footer" class="btcf">
+			
+			<div id="wf-a" >
+
+				<div id="nav_menu-5" class="col right widget_nav_menu"><div class="menu-footer-address-container"><ul id="menu-footer-address" class="menu"><li id="menu-item-520" class="bold menu-item menu-item-type-custom menu-item-object-custom menu-item-520"><a>Fraternity &#038;<br> Sorority Life</a></li>
+<li id="menu-item-1208" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1208"><a href="https://map.olemiss.edu/?id=562&#038;mrkIid=1000102322">218 Student Union Drive, Suite D, University, MS 38677</a></li>
+</ul></div></div><div id="nav_menu-6" class="col right widget_nav_menu"><div class="menu-footer-contact-container"><ul id="menu-footer-contact" class="menu"><li id="menu-item-696" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-696"><a href="&#x6d;a&#x69;&#108;&#x74;&#111;:&#x67;r&#x65;&#101;&#x6b;&#115;&#64;&#x6f;&#108;&#x65;&#109;i&#x73;s&#x2e;&#101;&#x64;&#117;">&#x67;&#x72;&#x65;&#101;&#107;s&#64;&#x6f;&#x6c;&#x65;&#x6d;&#105;&#115;s&#46;&#x65;&#x64;&#x75;</a></li>
+<li id="menu-item-695" class="first menu-item menu-item-type-custom menu-item-object-custom menu-item-695"><a href="tel:662-915-7609">P 662-915-7609</a></li>
+</ul></div></div><div id="nav_menu-8" class="col right widget_nav_menu"><div class="menu-footer-social-container"><ul id="menu-footer-social" class="menu"><li id="menu-item-705" class="fb icon_sp menu-item menu-item-type-custom menu-item-object-custom menu-item-705"><a href="https://www.facebook.com/TheFlagshipFSL">Facebook</a></li>
+<li id="menu-item-707" class="ig icon_sp menu-item menu-item-type-custom menu-item-object-custom menu-item-707"><a href="https://www.instagram.com/TheFlagshipFSl">Instagram</a></li>
+<li id="menu-item-706" class="twit icon_sp menu-item menu-item-type-custom menu-item-object-custom menu-item-706"><a href="https://twitter.com/TheFlagshipFSL">Twitter</a></li>
+</ul></div></div>                
+
+	</div><!--  wf-a  -->
+
+			
+			<div id="wf-b">			
+
+				<div id="nav_menu-7" class="col right widget_nav_menu"><div class="menu-dept-footer-links1-container"><ul id="menu-dept-footer-links1" class="menu"><li id="menu-item-1185" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1185"><a href="https://conflictresolution.olemiss.edu/">Conflict Resolution &#038; Student Conduct</a></li>
+<li id="menu-item-1184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1184"><a href="https://umatter.olemiss.edu/">UMatter</a></li>
+<li id="menu-item-1186" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1186"><a href="https://magee.olemiss.edu">William Magee Center</a></li>
+<li id="menu-item-702" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-702"><a href="https://union.olemiss.edu">Ole Miss Student Union</a></li>
+</ul></div></div><div id="nav_menu-9" class="col right widget_nav_menu"><div class="menu-dept-footer-links3-container"><ul id="menu-dept-footer-links3" class="menu"><li id="menu-item-708" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-708"><a href="http://nicindy.org/">North-American Interfraternity Conference</a></li>
+<li id="menu-item-709" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-709"><a href="http://www.nphchq.org/quantum/">National Pan-Hellenic Council</a></li>
+<li id="menu-item-710" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-710"><a href="https://www.npcwomen.org/">National Panhellenic Conference</a></li>
+<li id="menu-item-1203" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1203"><a href="https://www.olemiss.edu">The University of Mississippi</a></li>
+</ul></div></div>           
+
+			</div><!--  wf-b  -->
+
+		</div><!--  .widgetized-footer  -->
+        
+        
+</footer><!-- footer.department  -->
+
+<!--?php include('footerum.txt'); ?-->
+	<!--BE Footer: The following <div> block needs to be placed in the location where the link block will be displayed-->
+	<!--BE IXF: For your website, the location is above/below ... -->
+	<div class="be-ix-link-block">
+	
+<!-- be_ixf, bodystr, body_1 -->
+
+<!-- be_ixf, sdk, is -->
+	</div>
+	<!--BE Footer: end-->
+<!--BE IXF: The following <div> block needs to be placed in the location where the link block will be displayed-->
+<!--BE IXF: For your website, the location is   -->
+<div class="be-ix-link-block"><!--Link Block Target Div--></div>
+<!--BE IXF: end -->
+<footer id="um">
+	<nav id="mainfooter" class="btcf" aria-label="university footer">
+		<div class="row applications">
+			<div class="column">
+				<ul>
+					<li><a href="https://blackboard.olemiss.edu" class="link">Blackboard</a></li>
+					<li><a href="https://my.olemiss.edu" class="link">myOleMiss</a></li>
+					<li><a href="https://olemiss.edu/helpdesk/email/" class="link">Email</a></li>
+				</ul>
+			</div>
+			<div class="column">
+				<ul>
+					<li><a href="https://go.olemiss.edu" class="link">Go! Applications</a></li>
+					<li><a href="https://olemiss.edu/helpdesk/" class="link">IT Helpdesk</a></li>
+					<li><a href="https://olemiss.edu/mobile/" class="link">Mobile Apps</a></li>
+				</ul>
+			</div>
+			<div class="column">
+				<ul>
+					<li><a href="https://map.olemiss.edu" class="link">Map</a></li>
+					<li><a href="https://olemiss.edu/directories.html" class="link">Directories</a></li>
+					<li><a href="https://olemiss.summon.serialssolutions.com/" class="link">Library Search</a></li>
+					<li><a href="https://olemiss.edu/info/cloud/" class="link">Cloud Storage</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row address">
+			<div class="column">
+				<ul>
+					<li><a href="https://olemiss.edu/aboutum/" class="link">About UM</a></li>
+					<li><a href="https://olemiss.edu/academics/" class="link">Academics</a></li>
+					<li><a href="https://olemiss.edu/campuslife/" class="link">Campus Life</a></li>
+					<li><a href="https://olemiss.edu/newsevents/" class="link">News &amp; Events</a></li>
+					<li><a href="https://give.olemiss.edu/" class="link">Support Ole Miss</a></li>
+				</ul>
+			</div>
+			<div class="column">
+				<ul>
+					<li><a href="https://olemiss.edu/research/" class="link">Research</a></li>
+					<li><a href="https://libraries.olemiss.edu" class="link">Libraries</a></li>
+					<li><a href="https://olemiss.edu/international" class="link">International</a></li>
+					<li><a href="https://olemisssports.com" class="link">Athletics</a></li>
+					<li><a href="https://olemiss.edu/community.html" class="link">Community &amp; Service</a></li>
+				</ul>
+			</div>
+			<div class="addressblock"> <img src="/_umincludes/_umimages/logo/OleMiss.png" class="omlogo" alt="Ole Miss logo">
+				<div class="vcard">
+					<div class="org">The University of Mississippi</div>
+					<div class="adr"> <span class="street-address">P.O. Box 1848</span>, <span class="locality">University</span>, <span class="region">MS</span> <span class="postal-code">38677</span> <span class="country-name">USA</span> </div>
+					<div class="tel">(662) 915-7211</div>
+				</div>
+			</div>
+			<div class="column">
+				<ul>
+					<li><a href="https://blackboard.olemiss.edu" class="link">Blackboard</a></li>
+					<li><a href="https://my.olemiss.edu" class="link">myOleMiss</a></li>
+					<li><a href="https://olemiss.edu/helpdesk/email/" class="link">Email</a></li>
+					<li><a href="https://go.olemiss.edu" class="link">Go! Applications</a></li>
+					<li><a href="https://olemiss.edu/helpdesk/" class="link">IT Helpdesk</a></li>
+				</ul>
+			</div>
+			<div class="column">
+				<ul>
+					<li><a href="https://olemiss.edu/mobile/" class="link">Mobile Apps</a></li>
+					<li><a href="https://map.olemiss.edu/" class="link">Map</a></li>
+					<li><a href="https://olemiss.edu/directories.html" class="link">Directories</a></li>
+					<li><a href="https://olemiss.summon.serialssolutions.com/" class="link">Library Search</a></li>
+					<li><a href="https://olemiss.edu/info/cloud/" class="link">Cloud Storage</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="legal">
+			<ul>
+				<li><a href="https://olemiss.edu/info/eeo.html">EEO Statement</a></li>
+				<li><a href="https://olemiss.edu/info/comment.php">Give Us Your Feedback</a></li>
+				<li><a href="https://olemiss.edu/info/access.html">Accessibility</a></li>
+				<li><a href="https://secure.ethicspoint.com/domain/media/en/gui/31500/index.html">Ethics Line</a></li>
+				<li><a href="https://olemiss.edu/info/creed.html">UM Creed</a></li>
+			</ul>
+			<div class="copyright"><a href="//olemiss.edu/info/copy.html">Copyright &copy; <span id="year"></span> The University of Mississippi. All Rights Reserved.</a></div>
+			<div class="mspublicuniversities"> <a href="http://www.mississippi.edu/transparency"><img src="/_umincludes/_umimages/logo/MississippiSchools.png" alt="Mississippi Public Universities: Advancing Our State Together"></a> </div>
+		</div>
+	</nav>
+</footer>
+<script>
+	$(document).ready(function() {
+		var year = new Date().getFullYear();
+		$("#year").text(year);
+	})
+</script>
+
+<script type="text/javascript">/*! matchMedia() polyfill - Test a CSS media type/query in JS. Authors & copyright (c) 2012: Scott Jehl, Paul Irish, Nicholas Zakas. Dual MIT/BSD license */
+/*! NOTE: If you're already including a window.matchMedia polyfill via Modernizr or otherwise, you don't need this part */
+window.matchMedia=window.matchMedia||function(a){"use strict";var c,d=a.documentElement,e=d.firstElementChild||d.firstChild,f=a.createElement("body"),g=a.createElement("div");return g.id="mq-test-1",g.style.cssText="position:absolute;top:-100em",f.style.background="none",f.appendChild(g),function(a){return g.innerHTML='&shy;<style media="'+a+'"> #mq-test-1 { width: 42px; }</style>',d.insertBefore(f,e),c=42===g.offsetWidth,d.removeChild(f),{matches:c,media:a}}}(document);
+
+/*! Respond.js v1.1.0: min/max-width media query polyfill. (c) Scott Jehl. MIT/GPLv2 Lic. j.mp/respondjs  */
+(function(a){"use strict";function x(){u(!0)}var b={};if(a.respond=b,b.update=function(){},b.mediaQueriesSupported=a.matchMedia&&a.matchMedia("only all").matches,!b.mediaQueriesSupported){var q,r,t,c=a.document,d=c.documentElement,e=[],f=[],g=[],h={},i=30,j=c.getElementsByTagName("head")[0]||d,k=c.getElementsByTagName("base")[0],l=j.getElementsByTagName("link"),m=[],n=function(){for(var b=0;l.length>b;b++){var c=l[b],d=c.href,e=c.media,f=c.rel&&"stylesheet"===c.rel.toLowerCase();d&&f&&!h[d]&&(c.styleSheet&&c.styleSheet.rawCssText?(p(c.styleSheet.rawCssText,d,e),h[d]=!0):(!/^([a-zA-Z:]*\/\/)/.test(d)&&!k||d.replace(RegExp.$1,"").split("/")[0]===a.location.host)&&m.push({href:d,media:e}))}o()},o=function(){if(m.length){var a=m.shift();v(a.href,function(b){p(b,a.href,a.media),h[a.href]=!0,setTimeout(function(){o()},0)})}},p=function(a,b,c){var d=a.match(/@media[^\{]+\{([^\{\}]*\{[^\}\{]*\})+/gi),g=d&&d.length||0;b=b.substring(0,b.lastIndexOf("/"));var h=function(a){return a.replace(/(url\()['"]?([^\/\)'"][^:\)'"]+)['"]?(\))/g,"$1"+b+"$2$3")},i=!g&&c;b.length&&(b+="/"),i&&(g=1);for(var j=0;g>j;j++){var k,l,m,n;i?(k=c,f.push(h(a))):(k=d[j].match(/@media *([^\{]+)\{([\S\s]+?)$/)&&RegExp.$1,f.push(RegExp.$2&&h(RegExp.$2))),m=k.split(","),n=m.length;for(var o=0;n>o;o++)l=m[o],e.push({media:l.split("(")[0].match(/(only\s+)?([a-zA-Z]+)\s?/)&&RegExp.$2||"all",rules:f.length-1,hasquery:l.indexOf("(")>-1,minw:l.match(/\(min\-width:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/)&&parseFloat(RegExp.$1)+(RegExp.$2||""),maxw:l.match(/\(max\-width:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/)&&parseFloat(RegExp.$1)+(RegExp.$2||"")})}u()},s=function(){var a,b=c.createElement("div"),e=c.body,f=!1;return b.style.cssText="position:absolute;font-size:1em;width:1em",e||(e=f=c.createElement("body"),e.style.background="none"),e.appendChild(b),d.insertBefore(e,d.firstChild),a=b.offsetWidth,f?d.removeChild(e):e.removeChild(b),a=t=parseFloat(a)},u=function(a){var b="clientWidth",h=d[b],k="CSS1Compat"===c.compatMode&&h||c.body[b]||h,m={},n=l[l.length-1],o=(new Date).getTime();if(a&&q&&i>o-q)return clearTimeout(r),r=setTimeout(u,i),void 0;q=o;for(var p in e)if(e.hasOwnProperty(p)){var v=e[p],w=v.minw,x=v.maxw,y=null===w,z=null===x,A="em";w&&(w=parseFloat(w)*(w.indexOf(A)>-1?t||s():1)),x&&(x=parseFloat(x)*(x.indexOf(A)>-1?t||s():1)),v.hasquery&&(y&&z||!(y||k>=w)||!(z||x>=k))||(m[v.media]||(m[v.media]=[]),m[v.media].push(f[v.rules]))}for(var B in g)g.hasOwnProperty(B)&&g[B]&&g[B].parentNode===j&&j.removeChild(g[B]);for(var C in m)if(m.hasOwnProperty(C)){var D=c.createElement("style"),E=m[C].join("\n");D.type="text/css",D.media=C,j.insertBefore(D,n.nextSibling),D.styleSheet?D.styleSheet.cssText=E:D.appendChild(c.createTextNode(E)),g.push(D)}},v=function(a,b){var c=w();c&&(c.open("GET",a,!0),c.onreadystatechange=function(){4!==c.readyState||200!==c.status&&304!==c.status||b(c.responseText)},4!==c.readyState&&c.send(null))},w=function(){var b=!1;try{b=new a.XMLHttpRequest}catch(c){b=new a.ActiveXObject("Microsoft.XMLHTTP")}return function(){return b}}();n(),b.update=n,a.addEventListener?a.addEventListener("resize",x,!1):a.attachEvent&&a.attachEvent("onresize",x)}})(this);
+</script> 
+
+<!-- Google Analytics -->
+<!--script> // Attempting to replace GA analytics.js tag with gtag.js below 2/15/2022
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-508224-1', 'auto');  // Replace with your property ID.
+ga('send', 'pageview');
+
+</script-->
+<!-- End Google Analytics -->
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-508224-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-508224-1');
+</script>
+		
+		
+
+		<script>
+			// List of Themes, Classes and Regular expressions
+		var template_name = 'conversion.08a2';
+		switch(template_name) {
+			case 'twentyeleven' :
+					var classes = ['entry-meta'];
+					var regex = ' by <a(.*?)\/a>;<span class="sep"> by <\/span>';
+					break;
+			case 'twentyten' :
+					var classes = ['entry-meta'];
+					var regex = ' by <a(.*?)\/a>;<span class="meta-sep">by<\/span>';
+					break;
+			case 'object' :
+					var classes = ['post-details', 'post'];
+					var regex = ' by <span(.*?)\/span>;<p class="post-details">by';
+					break;
+			case 'theme-revenge' :
+					var classes = ['post-entry-meta'];
+					var regex = 'By <a(.*?)\/a> on';
+					break;
+			case 'Magnificent' :
+					var classes = ['meta-info'];
+					var regex = '<span>by<\/span> <a(.*?)\/a>;Posted by <a(.*?)\/a> on ';
+					break;
+			case 'wp-clearphoto' :
+					var classes = ['meta'];
+					var regex = '\\|\\s*<\/span>\\s*<span class="meta-author">\\s*<a(.*?)\/a>';
+					break;
+			case 'wp-clearphoto1' :
+					var classes = ['meta'];
+					var regex = '\\|\\s*<\/span>\\s*<span class="meta-author">\\s*<a(.*?)\/a>';
+					break;
+			default:
+					var classes = ['entry-meta'];
+					var regex = ' by <a(.*?)\/a>;<span class="sep"> by <\/span>; <span class="meta-sep">by<\/span>;<span class="meta-sep"> by <\/span>';
+		}
+				if (typeof classes[0] !== 'undefined' && classes[0] !== null) {
+				for(var i = 0; i < classes.length; i++) {
+					var elements = document.querySelectorAll('.'+classes[i]);
+					for (var j = 0; j < elements.length; j++) {
+						var regex_array = regex.split(";");
+						for(var k = 0; k < regex_array.length; k++) {
+							 if (elements[j].innerHTML.match(new RegExp(regex_array[k], "i"))) {
+								 var replaced_txt = elements[j].innerHTML.replace(new RegExp(regex_array[k], "i"), '');
+								 elements[j].innerHTML = replaced_txt;
+							 }
+						}
+					}			
+				}
+			}
+						
+		</script>
+	<script type='text/javascript' src='https://greeks.olemiss.edu/wp-content/themes/conversion.08a2/js/google-analytics.js?ver=1.0' id='google-js'></script>
+<script id="collapseomatic-js-js-before" type="text/javascript">
+const com_options = {"colomatduration":"fast","colomatslideEffect":"slideFade","colomatpauseInit":"","colomattouchstart":""}
+</script>
+<script type='text/javascript' src='https://greeks.olemiss.edu/wp-content/plugins/jquery-collapse-o-matic/js/collapse.js?ver=1.7.2' id='collapseomatic-js-js'></script>
+<script type='text/javascript' src='https://greeks.wp2.olemiss.edu/wp-content/plugins/new-royalslider/lib/royalslider/jquery.royalslider.min.js?ver=3.4.1' id='new-royalslider-main-js-js'></script>
+<script id="new-royalslider-init-code" type="text/javascript">
+jQuery(document).ready(function($) {
+	$('.new-royalslider-1').royalSlider({template:'default',image_generation:{imageWidth:'',imageHeight:'',thumbImageWidth:'',thumbImageHeight:''},thumbs:{thumbWidth:96,thumbHeight:72},autoPlay:{enabled:!0,delay:4000,stopAtAction:!1},video:[],block:{moveOffset:20,speed:400,delay:200},width:'100%',height:'',autoScaleSlider:!0,autoScaleSliderWidth:1200,slidesSpacing:'',imageScaleMode:'fill',imageScalePadding:'',controlNavigation:'none',loop:!0,loopRewind:!0,randomizeSlides:!0});
+});
+</script>
+    
+    
+    
+    
+
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-508224-1', 'auto'); 
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
 </body>
 
+</html>
 </html>
